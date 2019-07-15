@@ -36,8 +36,8 @@ def parse_args():
 
 if __name__ == '__main__':
     # Load arguments.
-    MIN_BOXES = 10
-    MAX_BOXES = 100
+    MIN_BOXES = 36 #MIN_BOXES = 10
+    MAX_BOXES = 36 #MAX_BOXES = 100
     N_CLASSES = 1601
     CONF_THRESH = 0.2
     args = parse_args()

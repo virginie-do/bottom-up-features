@@ -26,6 +26,7 @@ This code implements an extraction of Bottom-up image features ([paper](https://
 
 3. Install dependencies:
     ```
+    conda install torchvision
     pip install -r requirements.txt
     ```
 

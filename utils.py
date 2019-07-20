@@ -48,7 +48,7 @@ def save_features(output_file, features, boxes):
     np.save(output_file, res)
 
     
-    def listdir_nohidden(path):
-        for f in os.listdir(path):
-            if not f.startswith('.'):
-                yield f
+def listdir_nohidden(path):
+    for f in os.listdir(path):
+        if not f.startswith('.'):
+            yield f

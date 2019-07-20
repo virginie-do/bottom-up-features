@@ -1,4 +1,5 @@
 import numpy as np
+import os
 import cv2
 from model.utils.blob import im_list_to_blob
 from model.utils.config import cfg
@@ -45,3 +46,9 @@ def save_features(output_file, features, boxes):
     else:
         res = {'features': features, 'boxes': boxes}
     np.save(output_file, res)
+
+    
+    def listdir_nohidden(path):
+        for f in os.listdir(path):
+            if not f.startswith('.'):
+                yield f

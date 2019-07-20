@@ -8,7 +8,7 @@ import argparse
 from tqdm import tqdm
 from model.utils.config import cfg, cfg_from_file
 from model.faster_rcnn.resnet import resnet
-from utils import get_image_blob, save_features, listdir_no_hidden
+from utils import get_image_blob, save_features, listdir_nohidden
 from numpy_nms.cpu_nms import cpu_nms
 
 
@@ -62,7 +62,7 @@ if __name__ == '__main__':
     print('Model is loaded.')
 
     # Load images.
-    imglist = listdir_no_hiddent(args.image_dir)
+    imglist = listdir_nohidden(args.image_dir)
     num_images = len(imglist)
     print('Number of images: {}.'.format(num_images))
 

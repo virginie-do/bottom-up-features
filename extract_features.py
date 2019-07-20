@@ -62,7 +62,7 @@ if __name__ == '__main__':
     print('Model is loaded.')
 
     # Load images.
-    imglist = listdir_nohidden(args.image_dir)
+    imglist = list(listdir_nohidden(args.image_dir))
     num_images = len(imglist)
     print('Number of images: {}.'.format(num_images))
 
